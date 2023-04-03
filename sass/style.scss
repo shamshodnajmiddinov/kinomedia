@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.new_trailers {
+    background-color:
+        #1E2538;
+
+}
+
+.container {
+    width: 1430px;
+    margin: 0 auto;
+    color: #fff;
+
+    .trailers_header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 40px;
+
+        h3 {
+            font-family: 'Qanelas Bold';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 65px;
+
+        }
+
+        .arrow {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            p {
+                font-family: 'Qanelas SemiBold';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 22px;
+            }
+
+        }
+    }
+
+
+
+    .trailers_main {
+        width: 1430px;
+        height: 808px;
+        border-radius: 10px;
+        margin: 0 auto;
+        background: url("/public/image/farsag_bg.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+
+
+
+        .back {
+            display: none;
+
+            img {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 0;
+            }
+        }
+
+        .back.active {
+            display: block;
+            transition: .5s ease;
+        }
+
+    }
+
+    .trailers_sub_main {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+
+        .left_side {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            h2 {
+                font-family: 'Qanelas Bold';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 45px;
+            }
+
+
+        }
+
+        .right_side {
+
+            .like,
+            .dislike {
+                width: 58.87px;
+                height: 58.87px;
+                left: 1607.87px;
+                top: 2530.87px;
+                background: #1B2133;
+                border-radius: 10px;
+                border: 0;
+            }
+        }
+    }
+
+
+    .films {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+
+        .box_films {
+            width: 100%;
+
+
+            .img_films {
+                width: 334px;
+                position: relative;
+            }
+
+
+            img {
+                width: 100%;
+                border-radius: 15px;
+
+
+            }
+
+            .arrow {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 50px;
+            }
+
+            h3 {
+                font-family: 'Qanelas Bold';
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+            }
+        }
+    }
+}
